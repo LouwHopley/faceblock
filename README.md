@@ -4,21 +4,21 @@ Regain focus by blocking Facebook access from your local machine. This tool adds
 
 ## Installation & usage
 
-Sudo is required to write to your `/etc/hosts` file.
-
 ```
-sudo npm install faceblock -g
+npm install faceblock -g
 ```
 
 Blocking access to Facebook:
 ```
-faceblock --on
+sudo faceblock --on
 ```
 
 Unblock access to Facebook:
 ```
-faceblock --off
+sudo faceblock --off
 ```
+
+> Note that Sudo is required to write to your `/etc/hosts` file.
 
 ## How it works
 
