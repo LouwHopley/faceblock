@@ -5,7 +5,7 @@ Regain focus by blocking Facebook access from your local machine. This tool adds
 ## Installation & usage
 
 ```
-npm install faceblock -g
+npm i faceblock -g
 ```
 
 Blocking access to Facebook:
@@ -36,6 +36,8 @@ Faceblock rewrites all hostname lookups for a list of Facebook urls back to your
 127.0.0.1 www.fbcdn.com  
 127.0.0.1 static.ak.connect.facebook.com  
 127.0.0.1 www.static.ak.connect.facebook.com  
+127.0.0.1 youtube.com
+127.0.0.1 www.youtube.com
 
 ## Contribute
 

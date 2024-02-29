@@ -47,12 +47,12 @@ if (process.argv.includes('--on')) {
   // Add the blocking lines
   addBlock(hostsFilePath);
   console.log(`
-  Facebook has been disabled. Enjoy the focus.
+  Facebook & Youtube has been disabled. Enjoy the focus.
 `);
 } else if (process.argv.includes('--off')) {
   removeBlock(hostsFilePath);
   console.log(`
-  Facebook has been enabled again.
+  Facebook & Youtube has been enabled again.
 `);
 } else {
   // All other things should show "help"
@@ -61,8 +61,8 @@ if (process.argv.includes('--on')) {
 
   Options:
 
-    --on    Turn on Facebook blocking
-    --off   Turn of Facebook blocking
+    --on    Turn on Facebook & Youtube blocking
+    --off   Turn of Facebook & Youtube blocking
     --help  Show this help message
 `);
 }
