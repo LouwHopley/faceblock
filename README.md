@@ -36,8 +36,9 @@ Faceblock rewrites all hostname lookups for a list of Facebook urls back to your
 127.0.0.1 www.fbcdn.com  
 127.0.0.1 static.ak.connect.facebook.com  
 127.0.0.1 www.static.ak.connect.facebook.com  
-127.0.0.1 youtube.com
-127.0.0.1 www.youtube.com
+127.0.0.1 youtube.com  
+127.0.0.1 www.youtube.com  
+127.0.0.1 play.google.com  
 
 ## Contribute
 
