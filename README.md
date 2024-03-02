@@ -1,6 +1,6 @@
 # Faceblock - command-line tool to block Facebook
 
-Regain focus by blocking Facebook access from your local machine. This tool adds or removes Facebook urls to your local hosts file to block access.
+Regain focus by blocking Facebook and Youtube access from your local machine. This tool adds or removes Facebook & Youtube urls to your local hosts file to block access.
 
 ## Installation & usage
 
@@ -8,14 +8,14 @@ Regain focus by blocking Facebook access from your local machine. This tool adds
 npm i faceblock -g
 ```
 
-Blocking access to Facebook:
+Blocking access to Facebook & Youtube:
 ```
-sudo faceblock --on
+sudo faceblock on
 ```
 
-Unblock access to Facebook:
+Unblock access to Facebook & Youtube:
 ```
-sudo faceblock --off
+sudo faceblock off
 ```
 
 > Note that Sudo is required to write to your `/etc/hosts` file.
