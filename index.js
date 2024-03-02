@@ -34,6 +34,7 @@ const addBlock = (filePath) => {
     '# Block Youtube',
     '127.0.0.1 youtube.com',
     '127.0.0.1 www.youtube.com',
+    '127.0.0.1 play.google.com',
     '## faceblock-end ##'
   ];
   const blockingContent = fileLines.concat(blockingLines).join('\n');
@@ -41,7 +42,7 @@ const addBlock = (filePath) => {
 };
 
 // Process command line options
-if (process.argv.includes('--on')) {
+if (process.argv.includes('on')) {
   // Remove the block if it exists
   removeBlock(hostsFilePath);
   // Add the blocking lines
@@ -49,7 +50,7 @@ if (process.argv.includes('--on')) {
   console.log(`
   Facebook & Youtube has been disabled. Enjoy the focus.
 `);
-} else if (process.argv.includes('--off')) {
+} else if (process.argv.includes('off')) {
   removeBlock(hostsFilePath);
   console.log(`
   Facebook & Youtube has been enabled again.
@@ -57,12 +58,14 @@ if (process.argv.includes('--on')) {
 } else {
   // All other things should show "help"
   console.log(`
-  Usage: faceblock [option]
+  Usage: sudo faceblock [option]
 
   Options:
 
-    --on    Turn on Facebook & Youtube blocking
-    --off   Turn of Facebook & Youtube blocking
-    --help  Show this help message
+    on          Turn on Facebook & Youtube blocking
+    off         Turn of Facebook & Youtube blocking
+    -h, --help  Show this help message
+
+  Example: sudo faceblock on
 `);
 }
